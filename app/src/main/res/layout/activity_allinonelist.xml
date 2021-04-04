@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Allinonelist">
+    <RelativeLayout
+        android:id="@+id/rtlatv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true">
+
+        <AutoCompleteTextView
+            android:id="@+id/atv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:hint="    search"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_search"
+            android:layout_alignTop="@+id/atv"
+            android:layout_alignBottom="@+id/atv"
+            android:layout_alignEnd="@+id/atv"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rtlatv"
+        android:layout_marginTop="50dp">
+
+        <ListView
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FAF9F9" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:background="@android:color/black"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginTop="3dp"
+                android:src="@android:drawable/editbox_background" />
+
+            <ImageButton
+                android:id="@+id/imgbtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginTop="3dp"
+                android:src="@android:drawable/ic_menu_search" />
+
+            <ImageButton
+                android:id="@+id/imgbtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/imgbtn4"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:src="@android:drawable/ic_menu_share" />
+
+            <ImageButton
+                android:id="@+id/imgbtn5"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:src="@android:drawable/btn_star_big_on" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
